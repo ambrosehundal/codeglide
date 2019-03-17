@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'deeplearning/index'
+  get 'deeplearning/show'
   get 'leetcode/index'
   get 'leetcode/show'
   root 'leetcode#index'
