@@ -1,6 +1,6 @@
 class DeeplearningController < ApplicationController
   def index
-    @ml = DeepLearning.new.ml_events
+    @ml = Deeplearning.new.ml_events
     render 'index.html'
   end
 

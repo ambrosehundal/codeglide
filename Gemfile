@@ -10,6 +10,12 @@ gem "sqlite3", "~> 1.3.6"
 
 #httparty
 gem 'httparty'
+
+
+gem 'bootstrap'
+gem 'jquery-rails'
+
+
 # Use Puma as the app server
 
 gem 'puma', '~> 3.11'

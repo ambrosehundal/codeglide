@@ -1,10 +1,10 @@
-class DeepLearning
+class Deeplearning
     include HTTParty
 
     base_uri 'api.meetup.com'
 
     def get_new_ml_learning_sessions
-        self.class.get('/HandsOnProgrammingEvents/')
+        self.class.get('/HandsOnProgrammingEvents/events')
     end
 
     def ml_events

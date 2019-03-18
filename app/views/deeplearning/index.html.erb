@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-lg-6">
-  <h1 class="meetup">Leetcode practice sessions  (Mastery)</h1>
+  <h1 class="meetup">Deep Learning practice sessions  (Mastery)</h1>
   <table class="table-bordered table table-hover table-dark table-marg">
     <thead>
       <tr>
@@ -14,28 +14,28 @@
       </tr>
     </thead>
     <tbody>
-      <% @ml.each do |event| %>
+      <% @ml.each do |models| %>
         <tr>
           <td>
-            <%= event["name"] %>
+            <%= models["name"] %>
           </td>
           <td>
-            <%= event["status"] %>
+            <%= models["status"] %>
           </td>
           <td>
-            <%= event["local_date"] %>
+            <%= models["local_date"] %>
           </td>
           <td>
-            <%= event["local_time"] %>
+            <%= models["local_time"] %>
           </td>
           <td>
-            <%= event["venue"] %>
+            <%= models["venue.[city]"] %>
           </td>
           <td>
-            <%= event["description"] %>
+            <%= models["description"] %>
           </td>
           <td>
-            <%= link_to event["link"] %>
+            <%= link_to models["link"] %>
           </td>
         </tr>
       <% end %>
