@@ -1,0 +1,49 @@
+
+
+<div class="row">
+<div class="col-lg-6">
+  <h1 class="meetup">Blockchain practice sessions  (Mastery)</h1>
+  <table class="table-bordered table table-hover table-dark table-marg">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Local Time</th>
+        <th>Venue</th>
+        <th>Description</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @blocks.each do |models| %>
+        <tr>
+          <td>
+            <%= models["name"] %>
+          </td>
+          <td>
+            <%= models["status"] %>
+          </td>
+          <td>
+            <%= models["local_date"] %>
+          </td>
+          <td>
+            <%= models["local_time"] %>
+          </td>
+          <td>
+            <%= models["venue.[city]"] %>
+          </td>
+          <td>
+            <%= models["description"] %>
+          </td>
+          <td>
+            <%= link_to models["link"] %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br/>
+</div>
+</div>
+

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blockchain/index'
+  get 'blockchain/show'
   get 'deeplearning/index'
   get 'deeplearning/show'
   get 'leetcode/index'
